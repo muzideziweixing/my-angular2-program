@@ -1,0 +1,112 @@
+
+<div id="product_info">
+    <form id="product_form" (ngSubmit)="onSubmit()" [formGroup]="newMerchandiseForm">  
+        <div class="list-input-pub clearfix">
+            <dl>
+                <dt><span>*</span>图书内容：</dt>
+                <dd>
+                <input type="text" name="book_file" formControlName="book_file" readonly/> 
+                    <a class="affix-rms btn-select" id="book_rms">RMS</a>
+                    <a class="affix-local btn-select" id="file_name">本地</a>
+                    <p class="warn-mark" *ngIf="mesg('book_file')">{{mesg('book_file')}}</p> 
+                </dd>
+            </dl>
+            <!--<dl id="mpr_code_show" hidden>
+                <dt><span>*</span>前置码：</dt>
+                <dd>
+                    <input type="text" class="required " readonly="true" value="">
+                </dd>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+            </dl>-->
+            <dl>
+                <dt><span>*</span>图书书名：</dt>
+                <dd>
+                    <input type="text" id="book_name" name="book_name" formControlName="book_name" placeholder="请输入图书书名" maxlength="300"/>
+                    <p class="warn-mark"  *ngIf="mesg('book_name')">{{mesg('book_name')}}</p>
+                </dd>
+            </dl>
+            <dl formGroupName="book_isbn">
+                <dt><span>*</span>ISBN号：</dt>
+                <dd>
+                    <input id="book_isbn1" td-focus formControlName="book_isbn1" [patternInput]="'^[0-9]+$'" class="isbn"  type="text" maxlength="3">
+                    <span>-</span>
+                    <input id="book_isbn2" td-focus formControlName="book_isbn2" [patternInput]="'^[0-9]+$'" class="isbn"  type="text" maxlength="1">
+                    <span>-</span>
+                    <input id="book_isbn3" td-focus formControlName="book_isbn3" [patternInput]="'^[0-9]+$'" class="isbn"  type="text" maxlength="7">
+                    <span>-</span>
+                    <input id="book_isbn4" td-focus formControlName="book_isbn4" [patternInput]="'^[0-9]+$'" class="isbn"  type="text" maxlength="6">
+                    <span>-</span>
+                    <input id="book_isbn5" td-focus formControlName="book_isbn5" [patternInput]="'^[0-9]+$'" class="isbn"  type="text" maxlength="1">
+                    <p class="warn-mark" *ngIf="mesg('book_isbn1') || mesg('book_isbn2') || mesg('book_isbn3') || mesg('book_isbn4') || mesg('book_isbn5') || mesg('book_isbn')">
+                        {{ mesg('book_isbn1') || mesg('book_isbn2') || mesg('book_isbn3') || mesg('book_isbn4') || mesg('book_isbn5') || mesg('book_isbn') }}</p>
+                </dd>
+            </dl>
+            <dl class="high">
+                <dt><span>*</span>图书简介：</dt>
+                <dd class="wordCount">
+                    <textarea id="book_desc" name="book_desc" formControlName="book_desc" placeholder="请输入图书简介" maxlength="200" (input)="countLength($event)"></textarea>
+                    <strong class="text-number"><var class="text-word">{{wordLength}}</var>/200</strong>
+                    <p class="warn-mark" *ngIf="mesg('book_desc')">{{mesg('book_desc')}}</p>
+                </dd>
+            </dl>
+            <dl class="short dl-left">
+                <dt><span>*</span>著作者：</dt>
+                <dd>
+                    <input type="text" id="book_author" name="book_author" formControlName="book_author"/>
+                    <p class="warn-mark" *ngIf="mesg('book_author')">{{mesg('book_author')}}</p>
+                </dd>
+            </dl>
+            <dl class="short dl-right">
+                <dt><span>*</span>语种：</dt>
+                <dd>
+                    <tl-drop-down [dataValue]="languagesInfo" [lableName]="keyName" [valueName]="keyName" formControlName="book_language_id" ></tl-drop-down>
+                    <p class="warn-mark" *ngIf="mesg('book_language_id')">{{ mesg('book_language_id') }}</p>
+                </dd>
+            </dl>
+            <dl class="short dl-left">
+                <dt><span>*</span>发行者：</dt>
+                <dd>
+                    <input type="text" id="book_distributor" name="book_distributor" formControlName="book_distributor" placeholder="请输入发行者" maxlength="100"/>
+                    <p class="warn-mark" *ngIf="mesg('book_distributor')">{{mesg('book_distributor')}}</p>
+                </dd>
+            </dl>
+            <dl class="short dl-right">
+                <dt><span>*</span>制作时间：</dt>
+                <dd> 
+                    <tl-calendar formControlName="book_make_time" [calendarObj]="calendarObj"></tl-calendar>
+                    <p class="warn-mark" *ngIf="mesg('book_make_time')">{{mesg('book_make_time')}}</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><span>*</span>图书封面：</dt>
+                <dd>
+                    <img id="image_preview" crossorigin="anonymous" class="pic-default" [src]="bookCover?bookCover:ImgDefault" (error)="bookCover=ImgDefault">
+                    <div class="pic-select-box">
+                        <input type="file" name="book_pic_upload"  title="请选择图片" class="file" (change)="imgUpLoading($event)" #picFile/> 
+                        <button class="btn-select" >选择图片</button>
+                        <p class="pic-tips">（支持不小于<em>600x840，2M</em>以内，支持除gif外的全部格式文件）</p> 
+                    </div>
+                    <p class="warn-mark warn-mark-pic" *ngIf="mesg('book_pic_upload')">{{mesg('book_pic_upload')}}</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="btn-group padding-top-bot">
+            <button class="btn btn-red" id="form_submit" (click)="onSubmit()">下一步</button>
+        </div>
+    </form>
+</div>  
+<!--<div class="boomBox deleteBoom" id="wait_save">
+    <h5>{{_('提示：新内容尚未保存！')}}</h5>
+    <div class="center_button">
+        <input type="button" value="{{_('保&nbsp;存')}}" class="save close save_button" id="wait_save_yes">
+        <input type="button" value="{{_('确认取消')}}" class="cancel close cancel_button" id="wait_save_no">
+    </div>
+</div>
+<div class="resultBoom" id="save_success">
+    <a>{{_('创建成功')}}</a>
+</div>
+<div class="resultBoom" id="save_failed">
+    <a>{{_('创建失败')}}</a>
+</div>
+<div class="boombg"></div>-->
+
+ 

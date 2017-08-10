@@ -1,0 +1,5 @@
+a{ position:relative; display: inline-block; width: 78px;height: 28px;line-height: 28px; text-align: center; color:#259DAB;background:#EAFAFC;border:1px solid #5ACEDB;font-size:14px; }
+a:hover{ background:#C9F2F7}
+a:active{ -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);}
+.file-upload-input { background: none transparent; filter: alpha(opacity:0); cursor: pointer;
+  width: 80px;height: 30px; position: absolute; left:0; padding:0; opacity: 0; border: 0; font-size: 0; }

@@ -1,0 +1,11 @@
+<tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+  <template tl-template="serial_number" let-rowData>
+    <p>{{rowData._index}}</p>
+  </template>
+  <template tl-template="definite_message" let-rowData>
+    <p>{{rowData.definite_message}}</p>
+  </template>
+  <template tl-template="oper" let-rowData>
+    <p>{{rowData.oper}}</p>
+  </template>
+</tl-data-table>

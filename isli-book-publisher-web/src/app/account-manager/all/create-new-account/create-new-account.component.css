@@ -1,0 +1,9 @@
+div{ width: 779px; margin: 0 auto; height: auto; padding-bottom: 50px; }
+dl { padding-bottom: 10px; width: 100%; }
+dt { width: 197px; line-height: 26px; color: #5e5e5e; text-align: right; padding-right: 7px; }
+dd { width: 570px; color: #7e7e7e; }
+input { width: 352px; height: 24px; padding: 0 10px; border: 1px solid #a5a5a5; color: #7e7e7e; }
+img { width: 68px; height: 68px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; float: left; margin-right: 20px; }
+.account-portrait p { margin-top: 15px; }
+.red { color:#C6483E; }
+tl-image-upload-box { margin-left:70px; }

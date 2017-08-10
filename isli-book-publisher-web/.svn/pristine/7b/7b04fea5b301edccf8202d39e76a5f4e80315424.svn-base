@@ -1,0 +1,11 @@
+<div>
+  <a  href="javascript:void(0);" [class.routerLinkActive]="liInfo.routerLinkActive&&liInfo.selected" (click)="clickChange()">
+    <span>{{liInfo.name}}</span>
+    <i [ngClass]="{'drop-right':(liInfo.index==0)&&!liInfo.selected,'drop-down':(liInfo.index==0)&&liInfo.selected,'left95':liInfo.routerLink=='/shop-manager'}"></i>
+  </a>
+  <ul *ngIf="liInfo.children&&liInfo.children.length" [hidden]="(liInfo.index==0)&&!liInfo.selected&&!hidden">
+    <li *ngFor="let childrenInfo of liInfo.children">
+      <tl-li-nav [liInfo]="childrenInfo"></tl-li-nav>
+    </li>
+  </ul>
+</div>

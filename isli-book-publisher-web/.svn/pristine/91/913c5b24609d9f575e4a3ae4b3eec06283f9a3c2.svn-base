@@ -1,0 +1,15 @@
+<div class="search clearfix">
+  <dl>
+    <dt><label>账单状态&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [(ngModel)]="status" [placeholder]="'未申请结算'"></tl-drop-down-box></dd>
+  </dl>
+  <dl>
+    <dt><span class="red">*&nbsp;</span><label>对账日期&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd class="checking-query-box-time">
+      <input type="text" >
+      <span class="part">-</span>
+      <input type="text">
+    </dd>
+  </dl> 
+  <button class="btn btn-blue btn-search" href="javascript:void(0);" (click)="clickSearch()">搜索</button> 
+</div>

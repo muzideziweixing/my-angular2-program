@@ -1,0 +1,22 @@
+<div class="purchase-img-list-box">
+  <div class="purchase-img-list clearfix">
+    <ul>
+      <li (click)="clickImgDetails(rowData)" *ngFor="let rowData of imageListValue; let i = index">
+        <img src="{{rowData.bookImg}}">
+        <a class="{{rowData.bookType}}"></a>
+        <dl>
+          <h4 title="{{rowData.bookTitle}}">《{{rowData.bookTitle}}》</h4>
+          <dt>商品价格：</dt>
+          <dd>￥{{rowData.bookPrice}}</dd>
+          <dt>交易总额：</dt>
+          <dd class="amount_count">￥{{rowData.totalTrade}}</dd>
+          <dt>收益总额：</dt>
+          <dd class="shop_count">￥{{rowData.totalIncome}}</dd>
+          <dt>交易总量：</dt>
+          <dd class="total_count">{{rowData.totalNum}}本</dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+  <tl-paging-box [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)"> </tl-paging-box>
+</div>

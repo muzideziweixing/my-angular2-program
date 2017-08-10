@@ -1,0 +1,4 @@
+<a href="javascript:void(0);">{{buttonName}}
+  <input class="file-upload-input" type="file" name="mprImgBookImg" (change)="imgUpLoad($event)" *ngIf="!qtOnly">
+  <input class="file-upload-input file-upload-input-button" type="button" *ngIf="qtOnly" (click)="qtUploadImage()"/>
+</a>

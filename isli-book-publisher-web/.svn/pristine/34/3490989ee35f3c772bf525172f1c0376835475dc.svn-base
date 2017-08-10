@@ -1,0 +1,32 @@
+<!--<tl-product-list  [productListDataObj]="productListDataObj" [productListValue]="productListValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+  <template tl-template="download_list" let-rowData>
+    <div class="download-record-list">
+      <p class="download-number"> <span>下载量：</span> {{rowData.downloadNum}} </p>  
+      <div class="product-info" (click)="clickProductDetails(rowData)"> 
+        <img class="book-img" src="{{rowData.imgSrc}}" alt="{{rowData.bookTitle}}"> 
+        <span class="{{rowData.bookType}}"></span> 
+        <p class="book-title">
+          <a *ngFor="let title of getProductTitle(rowData.bookTitle); let i = index;" [class.highlight]="i==1" title="{{rowData.bookTitle}}">{{title}}</a> 
+        </p>
+      </div>
+    </div>
+  </template>  
+</tl-product-list>-->
+
+<div class="product-list-box">
+  <div class="product-list clearfix">
+    <ul>
+      <li class="download-record-list" *ngFor="let rowData of productListValue; let i = index">
+        <p class="download-number"> <span>下载量：</span> {{rowData.downloadNum}} </p>
+        <div class="product-info" (click)="clickProductDetails(rowData)">
+          <img class="book-img" src="{{rowData.imgSrc}}" alt="{{rowData.bookTitle}}">
+          <span class="{{rowData.bookType}}"></span>
+          <p class="book-title">
+            <a *ngFor="let title of getProductTitle(rowData.bookTitle); let i = index;" 
+            [class.highlight]="i==1" title="{{rowData.bookTitle}}">{{title}}</a>
+          </p>
+        </div>
+      </li>
+    </ul> 
+  </div>  
+</div> 

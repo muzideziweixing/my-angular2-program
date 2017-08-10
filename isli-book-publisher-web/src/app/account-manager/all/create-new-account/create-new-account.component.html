@@ -1,0 +1,48 @@
+<div>
+  <dl>
+    <dt>账户名称&nbsp;:&nbsp;&nbsp;</dt>
+    <dd><input type="text" placeholder="请输入账户名称"></dd>
+  </dl>
+  <dl>
+    <dt>账户ID&nbsp;:&nbsp;&nbsp;</dt>
+    <dd><input type="text" placeholder="请输入有效邮箱"></dd>
+  </dl>
+  <dl>
+    <dt>账户密码&nbsp;:&nbsp;&nbsp;</dt>
+    <dd><input type="text" placeholder="请输入6~16位字母或数字"></dd>
+  </dl>
+  <dl>
+    <dt>确认密码&nbsp;:&nbsp;&nbsp;</dt>
+    <dd><input type="text" placeholder="请输入6~20位字母、数字或符号"></dd>
+  </dl>
+  <dl>
+    <dt>账户角色&nbsp;:&nbsp;&nbsp;</dt>
+    <dd>
+      <tl-radio-box [labelName]="'超级管理员'" [inputName]="accountPrivilege" [inputValue]="'0'"
+                    [(ngModel)]="accountPrivilege"
+                    (onSelectedFn)="selectedFn0($event)"></tl-radio-box>
+      <tl-radio-box [labelName]="'运营管理员'" [inputName]="accountPrivilege" [inputValue]="'1'"
+                    [(ngModel)]="accountPrivilege"
+                    (onSelectedFn)="selectedFn1($event)"></tl-radio-box>
+      <tl-radio-box [labelName]="'财务管理员'" [inputName]="accountPrivilege" [inputValue]="'2'"
+                    [(ngModel)]="accountPrivilege"
+                    (onSelectedFn)="selectedFn2($event)"></tl-radio-box>
+    </dd>
+  </dl>
+  <dl>
+    <dt>&nbsp;</dt>
+    <dd>
+      <tl-account-table [dataTableInfo]="dataTableInfo"></tl-account-table>
+    </dd>
+  </dl>
+  <dl class="account-portrait">
+    <dt>账户头像&nbsp;:&nbsp;&nbsp;</dt>
+    <dd>
+      <img [src]="imgUrl">
+      <div>
+        <tl-image-upload-box [buttonName]="'上传头像'" [qtOnly]="qtOnly"></tl-image-upload-box>
+        <p>(支持不小于<span class="red">200×200</span> , <span class="red">100k</span>以内 , 支持除gif外的全部格式文件)</p>
+      </div>
+    </dd>
+  </dl>
+</div>

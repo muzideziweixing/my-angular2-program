@@ -1,0 +1,18 @@
+
+<div class="search clearfix">
+    <dl>
+        <dt>平台来源：</dt>
+        <dd>   
+            <tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [dropDownBoxValue]="platformValue.value" [keyName]="'name'" [keyId]="'id'" [(ngModel)]="flatform" [placeholder]="'全部'" > </tl-drop-down-box>
+        </dd> 
+    </dl>
+    <dl>
+        <dt>下载日期：</dt>
+        <dd>
+            <tl-start-end-calendar [(ngModel)]="beginEndDate"></tl-start-end-calendar>  
+        </dd>
+    </dl>
+    <button class="btn btn-blue btn-search" (click)="query()">搜索</button>
+</div>
+
+ 

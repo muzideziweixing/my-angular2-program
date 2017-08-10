@@ -1,0 +1,6 @@
+/*div{ border-bottom: 1px solid #DBDBDC;height:60px;display: flex;align-items: center }
+dl,dt,dd{ display: inline-block; }
+dt{ height:26px;line-height: 26px;width:132px;text-align: right; }
+dd{ width:200px; }*/
+/*input{ width:178px;height: 24px; line-height: 24px; color:#7e7e7e; border:1px solid #c7c7c7; padding:0 10px;} */
+/*label{ color:#5e5e5e; }*/

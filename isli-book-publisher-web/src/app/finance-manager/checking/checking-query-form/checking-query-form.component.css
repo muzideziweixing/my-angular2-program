@@ -1,0 +1,11 @@
+/*div { height:58px; border-bottom: 1px solid #DBDBDC;}
+.red{ color:#FF4F6D; }
+dl,dt,dd { display: inline-block; }
+dl { margin-top:16px; }
+dt { width:132px;text-align: right; height:26px;line-height:26px;}
+dd { width: 210px;position: relative; }
+.checking-query-box-time { width: 500px;}
+input{ width:115px; }
+label{ color:#5e5e5e; } */
+
+.part{ float: left; width: 10px; text-align: center; height: 26px; line-height: 26px; display: inline-block;}

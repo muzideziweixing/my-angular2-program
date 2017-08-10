@@ -1,0 +1,26 @@
+<div class="detailBoom">
+    <h5>买家信息</h5>
+    <a class="closeboom" (click)="clickClosed()"></a> 
+    <div class="goods_detail clearfix">
+        <dl>
+            <dt>昵称：</dt>
+            <dd>
+                <a id="user_nickname">{{dataTableDetails.user_nickname}}</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>账号：</dt>
+            <dd>
+                <a id="user_name">{{dataTableDetails.account}}</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>设备信息：</dt>
+            <dd>
+                <a id="user_terminal">{{dataTableDetails.plat}}</a>
+                <a id="user_terminal_serial">{{dataTableDetails.device}}</a>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="bg"></div>

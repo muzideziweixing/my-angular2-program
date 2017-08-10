@@ -1,0 +1,12 @@
+/*div { border-bottom: 1px solid #DBDBDC;padding-top: 15px;background:#FAFAFA; }
+div dl:nth-child(1){ margin-bottom: 5px; }
+div dl:nth-child(2){ margin-bottom: 15px; }
+dt,dd{ display: inline-block; }
+dt { width:132px;text-align: right; height:26px;line-height:26px;}
+.business-search{ width:200px; }
+.business-time{ width:300px; }
+input{ width:178px;padding:0 10px; }
+label{ color:#5e5e5e; }*/
+.part{ float: left; width: 10px; text-align: center; height: 26px; line-height: 26px; display: block;}
+tl-start-end-calendar{ float: left; margin-right: 10px; }
+tl-drop-down-box{ float:left; }

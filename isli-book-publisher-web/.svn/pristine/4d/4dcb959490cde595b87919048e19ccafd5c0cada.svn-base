@@ -1,0 +1,18 @@
+<tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+  <template tl-template="serial_number" let-rowData>
+    <p>{{rowData._index+1}}</p>
+  </template>
+  <template tl-template="account_title" let-rowData>
+    <p>{{rowData.account_title}}</p>
+  </template>
+  <template tl-template="account_id" let-rowData>
+    <p>{{rowData.account_id}}</p>
+  </template>
+  <template tl-template="account_role" let-rowData>
+    <p>{{rowData.account_role}}</p>
+  </template>
+  <template tl-template="oper" let-rowData>
+    <tl-operating-button [className]="'opraEdit'" (onClick)="edit($event)"></tl-operating-button>
+    <tl-operating-button [className]="'opraDelete'" (onClick)="delete($event)"></tl-operating-button>
+  </template>
+</tl-data-table>

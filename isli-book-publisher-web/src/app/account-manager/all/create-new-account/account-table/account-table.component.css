@@ -1,0 +1,5 @@
+table { width: 372px; }
+td { border: 1px solid #a5a5a5; }
+.account-tittle{ width:110px; text-align: center; }
+.account-content{ padding-left:15px; }
+td.disabled { color: #ccc; }

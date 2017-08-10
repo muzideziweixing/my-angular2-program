@@ -1,0 +1,5 @@
+<div class="image-magnify-box" *ngIf="ifImageMagnifyBox" [style.display]="imageMagnifyBoxObj.visible?'flex':'none'" (click)="imageMagnifyClose()">
+  <div [style.width]="imageMagnifyBoxObj.width" [style.height]="imageMagnifyBoxObj.height">
+    <img [src]="imageMagnifyBoxObj.imgUrl" [style.max-width]="imageMagnifyBoxObj.width" [style.max-height]="imageMagnifyBoxObj.height">
+  </div>
+</div>

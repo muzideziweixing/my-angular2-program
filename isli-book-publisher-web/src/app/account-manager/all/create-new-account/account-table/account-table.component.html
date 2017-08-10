@@ -1,0 +1,10 @@
+<table>
+  <tr *ngFor="let row of dataTableInfo">
+    <td class="account-tittle" [class.disabled]="getDisabled(row.privileges)">{{row.name}}</td>
+    <td class="account-content">
+      <p *ngFor="let td of row.privileges">
+        <tl-check-box [labelName]="td.name" [(ngModel)]="td.selected" [disabled]="td.disabled"></tl-check-box>
+      </p>
+    </td>
+  </tr>
+</table>

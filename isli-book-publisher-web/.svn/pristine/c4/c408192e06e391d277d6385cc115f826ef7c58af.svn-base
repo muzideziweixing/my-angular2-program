@@ -1,0 +1,9 @@
+.confirm-cancel-box-position{ position: fixed;top:0;left:0;width: 100%;height:100%;display: flex;justify-content: center;background: rgba(0,0,0,0.2);}
+.confirm-cancel-box{ width: 350px;height: 190px;background: #ffffff;position: relative; /*top: 200px;*/ position: fixed; left: 50%; top:50%; margin: -95px 0 0 -175px;}
+.confirm-cancel-box-header{ width: 100%;height: 110px;line-height: 110px;background: #41A5B1; padding-left: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.confirm-cancel-box-header-name{ display: inline-block;background:url(/assets/images/confirm-cancel-box/warin_icon.png) no-repeat;
+  padding-left: 58px;height: 52px;line-height: 46px; color: #fff;font-size: 16px;}
+/*.confirm-cancel-box-header-close{ width: 24px;height: 24px;display: inline-block;color:#fff;font-size:30px;position: absolute;right: 15px;top:-35px}*/
+.confirm-cancel-box-footer{ position: relative;width: 100%;display: flex;justify-content: center;align-items: center;height:80px;}
+a.btn.btn2{ width:70px;}
+

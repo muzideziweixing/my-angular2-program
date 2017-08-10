@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let liInfo of navInfo">
+    <tl-li-nav [liInfo]="liInfo"></tl-li-nav>
+  </li>
+</ul>

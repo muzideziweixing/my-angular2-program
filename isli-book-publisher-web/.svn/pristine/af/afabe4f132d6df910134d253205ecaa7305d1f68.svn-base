@@ -1,0 +1,8 @@
+<ng-container>
+  <tl-record    *ngIf="showContentFlag == 'LIST'"
+                (onClickProductDetails)="clickProductDetails($event)">
+                </tl-record>
+  <tl-details   *ngIf="showContentFlag == 'DETAILS'"
+                [goodsInfo]="goodsInfo" >
+                </tl-details>
+</ng-container>

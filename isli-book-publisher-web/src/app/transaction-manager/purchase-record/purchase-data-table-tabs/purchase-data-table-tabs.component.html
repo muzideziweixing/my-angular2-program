@@ -1,0 +1,11 @@
+<div class="clearfix">
+  <div class="download-total-num">
+    <a>累计交易金额：&nbsp;&nbsp;<em class="total_amount" id="detail_count">{{tabTotalInfo?.totalTrade}}</em> </a>
+    <a>累计收益：&nbsp;&nbsp;<em class="total_amount" id="detail_count">{{tabTotalInfo?.totalIncome}}</em></a>
+    <span class="data-table-list" [class.data-table-active]="this.purchaseTabsFlags=='LIST'" (click)="tabChangeList()"></span>
+    <span class="data-table-image-text" [class.data-table-active]="this.purchaseTabsFlags=='IMAGE'" (click)="tabChangeImageText()"></span>
+    <span class="data-table-question"><em>该列表的排列方式，依照商品创建时间进行排列(最新在前) </em></span>
+  </div>
+</div>
+
+ 

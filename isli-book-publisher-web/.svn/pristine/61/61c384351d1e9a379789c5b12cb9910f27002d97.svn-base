@@ -1,0 +1,23 @@
+<tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+  <template tl-template="serial_number" let-rowData>
+    <p>{{rowData.serial_number}}</p>
+  </template>
+  <template tl-template="settlement_date" let-rowData>
+    <p>{{rowData.settlement_date}}</p>
+  </template>
+  <template tl-template="settlement_order_number" let-rowData>
+    <p>{{rowData.settlement_order_number}}</p>
+  </template>
+  <template tl-template="settlement_payer" let-rowData>
+    <p>{{rowData.settlement_payer}}</p>
+  </template>
+  <template tl-template="settlement_amount" let-rowData>
+    <p>{{rowData.settlement_amount}}</p>
+  </template>
+  <template tl-template="settlement_status" let-rowData>
+    <p>{{rowData.settlement_status}}</p>
+  </template>
+  <template tl-template="oper" let-rowData>
+    <p>{{rowData.oper}}</p>
+  </template>
+</tl-data-table>

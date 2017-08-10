@@ -1,0 +1,11 @@
+<div class="download-total-info">
+  <a class="download-total-book">
+    <span>您正在查看图书商品《</span>
+    <em>{{goodsInfo?.bookTitle}}</em>
+    <span>》的交易详情</span>
+  </a>
+  <div class="download-total-num">
+    <a>累计交易金额：&nbsp;&nbsp;<em class="total_amount" id="detail_count">{{totalInfo?.totalIncome}}</em></a>
+    <a>累计收益：&nbsp;&nbsp;<em class="total_amount" id="detail_count">{{totalInfo?.totalTrade}}</em></a>
+  </div>
+</div>

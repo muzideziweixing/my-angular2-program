@@ -1,0 +1,7 @@
+<ul>
+  <li><span>我的位置&nbsp;:&nbsp;</span></li>
+  <li *ngFor="let liInfo of navInfo;let i = index">
+    <a><span [class.rightNavActive]="(i==navInfo.length-1)">{{liInfo.name}}</span></a>
+    <span [style.display]="(i==navInfo.length-1)?'none':'inline-block'"> &nbsp;>&nbsp; </span>
+  </li>
+</ul>

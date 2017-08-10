@@ -1,0 +1,6 @@
+<div>
+  <tl-account-all-add [step]="step" (onAdd)="add($event)" (onSave)="save($event)" (onCancel)="cancel($event)"></tl-account-all-add>
+  <tl-account-all-data-table [hidden]="!(step==0)" [dataTableValue]="dataTableValue" (onPageChange)="pageChange($event)" (onEdit)="edit($event)"
+                             (onDelete)="delete($event)"></tl-account-all-data-table>
+  <tl-create-new-account *ngIf="step==1"></tl-create-new-account>
+</div>

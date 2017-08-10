@@ -1,0 +1,15 @@
+<ng-container>
+    <tl-search      (onSearchForm)="productListSearch($event)"></tl-search>
+    <tl-condition   (onClickTitle)="clickTitle($event)"
+                    (onClickNumber)="clickNumber($event)"
+                    (onClickTime)="clickTime($event)">
+                    </tl-condition>
+    <tl-list        [productListValue]="productListValue"
+                    [pagingBoxObj]="pagingBoxObj"
+                    [keywords]="keywords"
+                    (onClickProductDetails)="clickProductDetails($event)" >
+                    </tl-list>  
+    <tl-paging-box  [pagingBoxObj]="pagingBoxObj" 
+                    (onPageChange)="pageChange($event)">
+                    </tl-paging-box>
+</ng-container>

@@ -1,0 +1,17 @@
+<div class="search clearfix">
+  <dl>
+    <dt><label for="search">商品搜索&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><input id="search" type="text" [(ngModel)]="searchName" placeholder="ISBN、关键词"></dd>
+  </dl>
+  <dl>
+    <dt><label>{{firstSelectData.labelName}}&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [placeholder]="'全部'" [dropDownBoxValue]="firstSelectData.value" [keyName]="'name'"
+                          [keyId]="'strategy_id'" [(ngModel)]="strategy"></tl-drop-down-box></dd>
+  </dl>
+  <dl>
+    <dt><label>{{secondSelectData.labelName}}&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [placeholder]="'全部'" [dropDownBoxValue]="secondSelectData.value" [keyName]="'name'"
+                          [keyId]="'status_id'" [(ngModel)]="status"></tl-drop-down-box></dd>
+  </dl> 
+  <button class="btn btn-blue btn-search" href="javascript:void(0);" (click)="clickSearch()">搜索</button> 
+</div>

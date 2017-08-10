@@ -1,0 +1,29 @@
+<div class="table-box">
+  <table>
+    <thead>
+    <tr>
+      <th *ngFor="let columnObj of dataTableObj.columnObjs" [ngStyle]="columnObj.ngStyle" [ngClass]="columnObj.ngClass" (click)="getSort(columnObj.sortable)">
+        {{columnObj.header}}
+        <span *ngIf="columnObj.sortable&&sortable===true">↓</span>
+        <span *ngIf="columnObj.sortable&&sortable===false">↑</span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let rowData of dataTableValue;let i = index">
+      <td *ngFor="let obj of dataTableObj.columnObjs" [ngStyle]="obj.ngStyle" [ngClass]="obj.ngClass">
+        <span *ngIf="!obj.template">{{rowData[obj.field]}}</span>
+        <tl-templateLoader [templates]="templates.toArray()" [data]="rowData" [templateName]="obj.template" [index]="i"></tl-templateLoader>
+      </td>
+      <ng-content></ng-content>
+    </tr>
+    </tbody>
+  </table>
+  <div class="no-dataTableValue" *ngIf="!dataTableValue||!dataTableValue.length">
+    <span [hidden]="!!dataTableValue" class="data-loading">数据加载中···</span>
+    <span [hidden]="!dataTableValue" class="no-data">暂无数据</span>
+  </div>
+  <div class="paging-box-position">
+    <tl-paging-box [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)"></tl-paging-box>
+  </div>
+</div>

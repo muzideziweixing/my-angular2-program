@@ -1,0 +1,16 @@
+<div class="search clearfix">
+  <dl>
+    <dt><label for="business-search">商品搜索&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd class="business-search"><input id="business-search" type="text" placeholder="ISBN、关键字" [(ngModel)]="goods_keywords"></dd>
+  </dl>
+  <dl>
+    <dt><label>商品交易时间&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd class="business-time"> 
+      <tl-start-end-calendar [(ngModel)]="beginEndDate"></tl-start-end-calendar>  
+      <tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [dropDownBoxValue]="dropDownBoxValue" [keyName]="'name'" [keyId]="'name'" [placeholder]="'开始时间'" [(ngModel)]="start_hour"></tl-drop-down-box>
+      <span class="part">-</span>
+      <tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [dropDownBoxValue]="dropDownBoxValue" [keyName]="'name'" [keyId]="'name'" [placeholder]="'结束时间'" [(ngModel)]="end_hour"></tl-drop-down-box>
+    </dd>
+  </dl> 
+  <button class="btn btn-blue btn-search" href="javascript:void(0);" (click)="query()">搜索</button> 
+</div>

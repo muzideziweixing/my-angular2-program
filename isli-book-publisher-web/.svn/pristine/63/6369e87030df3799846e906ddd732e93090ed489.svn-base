@@ -1,0 +1,13 @@
+span{ color:#ffffff;font-size: 14px;display: inline-block;padding-left:45px; }
+a{ display: inline-block;width:100%;height:36px;line-height: 36px; }
+a:hover span{ color:#A8EAF3; }
+a.routerLinkActive{ background:#FFFFFF; }
+ul li a.routerLinkActive span{ color:#2F3B56;background:url(/assets/images/nav/nav_li.png) no-repeat 32px -31px; }
+ul span{ background:url(/assets/images/nav/nav_li.png) no-repeat 32px 1px; }
+ul a:hover span { background:url(/assets/images/nav/nav_li.png) no-repeat 32px -63px; }
+ul ul span { margin-left:15px; }
+
+.drop-right,.drop-down{ position: relative; left:105px; top:-1px; display: inline-block; width:0; height:0; }
+.drop-right{ border-top: 3px solid transparent; border-bottom: 4px solid transparent; border-left: 6px solid #FFFFFF; }
+.drop-down{ border-top: 6px solid #FFFFFF; border-right: 4px solid transparent; border-left: 3px solid transparent; }
+.left95{ left:90px; }

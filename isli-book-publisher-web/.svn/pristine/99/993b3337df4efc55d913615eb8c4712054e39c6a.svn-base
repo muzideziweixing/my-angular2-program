@@ -1,0 +1,7 @@
+<li *ngFor="let liInfo of navInfo;let i = index" [style.display]="liInfo.selected?'inline-block':'none'">
+  <a><span [class.rightNavActive]="!liInfo.children.length">{{liInfo.name}}</span></a>
+  <span [style.display]="liInfo.children.length?'inline-block':'none'"> &nbsp;>&nbsp; </span>
+  <ul *ngIf="liInfo.children&&liInfo.children.length">
+    <tl-right-li-nav [navInfo]="liInfo.children"></tl-right-li-nav>
+  </ul>
+</li>

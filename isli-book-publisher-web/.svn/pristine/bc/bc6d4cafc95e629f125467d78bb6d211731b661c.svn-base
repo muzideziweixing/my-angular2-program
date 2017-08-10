@@ -1,0 +1,5 @@
+.goods_time{ color: #888; padding-bottom: 4px; padding-left: 6px;}
+.btn-details{ width: 22px; height: 22px; display: block; background: url(/assets/images/opraDetail.png) no-repeat; background-position: 0 0;}
+.btn-details:hover{ background-position: -22px 0;} 
+
+span{ color: #6a6a6a;}

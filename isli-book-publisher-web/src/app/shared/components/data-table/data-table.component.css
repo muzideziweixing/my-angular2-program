@@ -1,0 +1,18 @@
+.statistics-box a{ color: #0c9899; font-size: 14px; font-weight: bold;}
+.statistics-box label{ color: #c9302c; font-size: 14px; font-weight: bold; padding: 0 2px;}
+.table-box table{ margin-top: -1px;}
+.table-box table thead tr{ background: #e8eff0; border-bottom: 1px solid #c8d2d4; border-top: 1px solid #c8d2d4;}
+.table-box table th{ height: 40px; line-height: 40px; color: #5f6a6c; text-align: left;}
+.table-box table tbody tr td{ height: 26px; border-bottom: 1px solid #d0d0d0; text-align: left; padding: 6px 20px 6px  0; color: #6b6a6a; word-wrap: break-word; word-break: break-all;}
+.table-box table tbody tr.no-dataTableValue td { text-align: center; padding: 10px 0;}
+/*.no-dataTableValue td span{ font-size: 15px;font-weight: 600;color: #6E6666; }*/
+.paging-box-position{ height: 23px; display: flex; justify-content: flex-end; padding:23px;}
+.table-box table th:first-child,
+.table-box table tbody tr td:first-child{ padding-right: 20px; padding-left: 25px;}
+span{ color: #6a6a6a;}
+
+
+.no-data[hidden],.data-loading[hidden]{ display: none;}
+.no-data,.data-loading{ width: 100%; height: auto; display: block; text-align: center; font-size: 18px; color: #8b8b8b;}
+.no-data{ background: url(/assets/images/listNodata.png) center center no-repeat; padding-top: 154px; margin-bottom: 50px; margin-top: 96px;}
+.data-loading{ background: url(/assets/images/loading.gif) center center no-repeat; padding-top: 140px;}

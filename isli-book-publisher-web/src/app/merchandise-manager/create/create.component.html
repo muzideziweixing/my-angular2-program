@@ -1,0 +1,12 @@
+<div class="list-info-box">
+    <div class="new-goods-tab">
+        <a class="new-goods-tab-first">填写商品信息</a>
+        <a class="new-goods-tab-end">制定商品销售信息</a>
+        <span class="multi-new"></span>
+    </div> 
+    <tl-new-merchandise-info 
+                            
+                            (OnNoBaseInfoNext)="noBaseInfoNext($event)"
+                            (OnDone)="baseInfoNext($event)"
+                            ></tl-new-merchandise-info>
+</div>

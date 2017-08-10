@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<h1>按钮（标签button直接用class即可）</h1>
+		<button class="btn btn-red">保存</button> 
+		<button class="btn btn-red">下一步</button>
+		<button class="btn btn-blue">取消</button>
+		<button class="btn btn-gray">禁用</button>
+		<button class="btn-select">选择图片</button>
+		<button class="btn-select-disable">不可操作</button>
+		<button class="btn-select btn-select-active">所选操作</button>
+		
+		<h1>字体颜色（注意样式提示）</h1>
+		<h2>搜索和表单部分：</h2>
+		<div class="clearfix">
+			<dl>
+				<dt>dt里的字体颜色：#5e5e5e:</dt>
+				<dd>
+					<input value="input:{height: 24px; line-height: 24px; color:#7e7e7e; border:1px solid #c7c7c7; padding:0 10px;}宽度不同页面有所区别" type="text"/>
+					<p>这里是错误提示p{ line-height: 17px; color: #e06a2f;}</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>dt里的字体颜色：#5e5e5e:</dt>
+				<dd>
+					<textarea>textarea:{line-height: 24px; color:#7e7e7e; border:1px solid #c7c7c7; padding:5px 10px; resize: none;}宽高不同页面有所区别</textarea>
+					<p>这里是错误提示p</p>
+				</dd>
+			</dl>
+		</div>
+		<h2>表格部分</h2> 
+		<h5>表头统计 <span style=" color: #5e5e5e;">累计交易金额span{color:#5e5e5e}：&nbsp;&nbsp;<strong style="color: #2fadbc;">￥128.26 strong{color:#2fadbc;}</strong></span></h5>
+		<table>
+			<tr style="background: #e8eff0; border-bottom: 1px solid #c8d2d4; border-top: 1px solid #c8d2d4;">
+				<th style="height: 40px; line-height: 40px; color: #5f6a6c; text-align: left;">表头{height: 40px; line-height: 40px; color: #5f6a6c; text-align: left; background: #e8eff0; border-bottom: 1px solid #c8d2d4; border-top: 1px solid #c8d2d4}</th>
+			</tr>
+			<tr>
+				<td style="color: #6b6a6a; border-bottom: 1px solid #d0d0d0; padding: 6px 20px 6px 0; word-wrap: break-word;
+    word-break: break-all;">
+					表格默认文字颜色：#6b6a6a;border-bottom: 1px solid #d0d0d0; padding: 6px 20px 6px 0; word-wrap: break-word;
+    word-break: break-all;<br />
+					<span style="color: #888;">浅颜色文字颜色：span{color: #888;}</span><br />
+					<strong style="color: #3db9c8; font-weight: normal;">突出文字颜色（蓝色）：strong{color: #3db9c8; font-weight: normal;}</strong>
+				</td>
+			</tr>
+		</table>  
+		<h2>图片列表部分</h2>
+		<p class="book">书名&默认文字颜色：{color: #707070;}------>:hover{ color:#2fadbc}</p>
+		<p style="color: #5e5e5e;">下载量{color:#5e5e5e; font-size:12px;}：<span style="color: #d9624f;">{color:#d9624f;font-size:12px;}</span></p>
+
+		
+		
+		
+		
+	</body>
+</html>

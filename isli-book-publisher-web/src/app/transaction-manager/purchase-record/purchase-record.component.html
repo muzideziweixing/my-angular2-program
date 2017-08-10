@@ -1,0 +1,31 @@
+<ng-container>
+    <div *ngIf="recordFlags=='RECORD'">
+        <tl-purchase-query-form             (onQuery)="query($event)"></tl-purchase-query-form>
+        <tl-purchase-data-table-tabs 
+                                            (onTabChangeList)="tabChangeList()"
+                                            (onTabChangeImageText)="tabChangeImageText()"
+                                            [purchaseTabsFlags]="purchaseTabsFlags"
+                                            [tabTotalInfo]="tabTotalInfo">
+                                            </tl-purchase-data-table-tabs>
+        <tl-purchase-data-table-lists       *ngIf="purchaseTabsFlags == 'LIST'"
+                                            [dataTableValue]="dataTableValue"  
+                                            [pagingBoxObj]="pagingBoxObj" 
+                                            (onClickDetails)="clickDetails($event)"
+                                            (onPageChange)="pageChange($event)">
+                                            </tl-purchase-data-table-lists>
+        <tl-purchase-data-table-image-text  *ngIf="purchaseTabsFlags == 'IMAGE'"
+                                            [pagingBoxObj]="pagingBoxObj" 
+                                            [imageListValue]="imageListValue"
+                                            (onClickImgDetails)="clickImgDetails($event)"
+                                            (onPageChange)="imgPageChange($event)">
+                                            </tl-purchase-data-table-image-text> 
+        <tl-opr-details                     *ngIf="purchaseTabsFlags == 'LIST'&& detailsFlags == 'true'"
+                                            [dataTableDetails]="dataTableDetails"
+                                            (onClickClosed)="clickClosed()">
+                                            </tl-opr-details> 
+    </div>
+    <div *ngIf="recordFlags=='DETAILS'">
+        <tl-opr-image-details               [goodsInfo]="goodsInfo"></tl-opr-image-details>
+    </div>
+</ng-container> 
+                                    

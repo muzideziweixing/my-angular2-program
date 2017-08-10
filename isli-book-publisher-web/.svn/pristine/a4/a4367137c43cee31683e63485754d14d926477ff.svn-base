@@ -1,0 +1,6 @@
+<div [class.prompts-box-position]="promptsBoxObj.positionFlag" *ngIf="ifPromptsBox" [style.display]="promptsBoxObj.visible?'flex':'none'"
+     [@dialogState]="promptsBoxObj._showAnimations ? 'visible' : 'hidden'">
+  <div class="prompts-box" [ngStyle]="promptsBoxStyles">
+    <span class="prompts-box-name" [style.color]="promptsBoxObj.color">{{promptsBoxObj?.name}}</span>
+  </div>
+</div>

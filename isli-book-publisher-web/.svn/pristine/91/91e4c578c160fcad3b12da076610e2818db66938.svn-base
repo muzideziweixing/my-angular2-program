@@ -1,0 +1,12 @@
+ul{  }
+ul li:nth-child(1) { background:url(/assets/images/nav/nav_shop.png) no-repeat 15px 10px; }
+ul li:nth-child(2) { background:url(/assets/images/nav/nav_goods.png) no-repeat 15px 11px; }
+ul li:nth-child(3) { background:url(/assets/images/nav/nav_trade.png) no-repeat 15px 10px; }
+ul li:nth-child(4) { background:url(/assets/images/nav/nav_download.png) no-repeat 15px 10px; }
+ul li:nth-child(5) { background:url(/assets/images/nav/nav_finance.png) no-repeat 15px 9px; }
+ul li:nth-child(6) { background:url(/assets/images/nav/nav_news.png) no-repeat 15px 12px; }
+ul li:nth-child(7) { background:url(/assets/images/nav/nav_account.png) no-repeat 15px 10px; }
+
+
+
+

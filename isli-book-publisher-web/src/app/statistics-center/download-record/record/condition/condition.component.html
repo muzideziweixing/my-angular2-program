@@ -1,0 +1,5 @@
+<div class="topButton"> 
+    <button class="btn-select" [class.btn-select-active]="isClickedFlag === 'clickTitle'" (click)="clickTitle()">按书名</button>
+    <button class="btn-select" [class.btn-select-active]="isClickedFlag === 'clickNumber'" (click)="clickNumber()">按次数</button>
+    <button class="btn-select" [class.btn-select-active]="isClickedFlag === 'clickTime'" (click)="clickTime()">按时间</button> 
+</div>

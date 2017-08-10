@@ -1,0 +1,6 @@
+.cont-l{ z-index: 999;position: fixed;width: 230px;height: 100%;background:#2E3A54; }
+.cont-r{ /*position: fixed;width: 100%;border-left:230px solid #dcdcdc;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;*/
+margin-left: 230px; border-left: 1px solid #dbdbdc; }
+
+
+

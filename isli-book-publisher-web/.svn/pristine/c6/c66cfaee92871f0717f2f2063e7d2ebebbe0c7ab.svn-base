@@ -1,0 +1,2 @@
+<tl-query-form [firstSelectData]="strategySelectData" [secondSelectData]="statusSelectData" (onSearch)="search($event)"></tl-query-form>
+<tl-for-sale-data-table [dataTableValue]="dataTableValue"></tl-for-sale-data-table>

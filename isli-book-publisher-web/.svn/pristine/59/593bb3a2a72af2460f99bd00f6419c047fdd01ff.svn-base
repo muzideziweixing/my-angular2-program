@@ -1,0 +1,10 @@
+.product-list{ margin: 0 auto; text-align: center;}
+/*.product-list ul li{ width: 102px; height: 235px; float: left; margin-left: 22px; margin-right: 22px;}*/
+.product-list ul li.other-status{ width: 100%;}
+.no-data[hidden],.data-loading[hidden]{ display: none;}
+.no-data,.data-loading{ width: 100%; height: auto; display: block; text-align: center; font-size: 18px; color: #8b8b8b;}
+.no-data{ background: url(/assets/images/listNodata.png) center center no-repeat; padding-top: 154px;}
+.data-loading{ background: url(/assets/images/loading.gif) center center no-repeat; padding-top: 140px;}
+
+
+.paging-box-position{ height: 23px; display: flex; justify-content: flex-end; padding:23px;}

@@ -1,0 +1,27 @@
+<tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+  <template tl-template="serial_number" let-rowData>
+    <span>{{rowData._index+1}}</span>
+  </template>  
+  <template tl-template="goods_name" let-rowData>
+    <p class="goods_time">商品交易时间: {{rowData.goods_time}}</p>
+    <span>《{{rowData.goods_name}}》</span>
+  </template> 
+  <template tl-template="goods_price" let-rowData>
+    <span>￥{{rowData.goods_price}}</span>
+  </template> 
+  <template tl-template="real_price" let-rowData>
+    <span>￥{{rowData.real_price}}</span>
+  </template> 
+  <template tl-template="now_earnings" let-rowData>
+    <span>￥{{rowData.now_earnings}}</span>
+  </template> 
+  <template tl-template="fmr_earnings" let-rowData>
+    <span>￥{{rowData.fmr_earnings}}</span>
+  </template>  
+  <template tl-template="poundage" let-rowData>
+    <span>￥{{rowData.poundage}}</span>
+  </template>  
+  <template tl-template="oper" let-rowData>
+    <a class="btn-details" (click)="clickDetails(rowData)"></a>
+  </template>   
+</tl-data-table>

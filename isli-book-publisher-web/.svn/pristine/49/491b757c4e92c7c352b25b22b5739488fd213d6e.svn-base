@@ -1,0 +1,11 @@
+<div class="drop-down-position" [ngStyle]="ngStylePosition" (mouseleave)="positionMouseLeave()">
+  <div class="icon-drop-box" (click)="clickToggle()" [ngStyle]="ngStyleDiv" [class.icon-drop-box-active]="toggleFlag">
+    <input class="icon-drop-box-input" readonly type="text" [placeholder]="placeholder" [ngStyle]="ngStyleInput" [(ngModel)]="value"><div><i class="icon-drop-down" [class.icon-drop-up]="toggleFlag"></i></div>
+  </div>
+  <ul [hidden]="!toggleFlag" class="drop-down-ul" [ngClass]="{'drop-down-ul-auto':dropDownBoxValue&&dropDownBoxValue.length>5}" [ngStyle]="ngStyleUl" [@dialogState]="animationFlag ? 'visible' : 'hidden'">
+    <li class="drop-down-li" [class.active]="(i==index)&&!mouseEnterFlag"  *ngFor="let obj of dropDownBoxValue;let i = index" [ngStyle]="ngStyleLi"
+        (click)="select(obj,i)" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">{{obj[keyName]}}
+      <!--<span>{{obj[keyName]}}</span>-->
+    </li>
+  </ul>
+</div>

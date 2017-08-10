@@ -1,0 +1,5 @@
+<tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+    <template tl-template="serial_number" let-rowData>
+      <span>{{rowData._index+1}}</span>
+    </template>  
+  </tl-data-table>

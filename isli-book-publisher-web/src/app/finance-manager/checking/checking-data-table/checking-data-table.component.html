@@ -1,0 +1,33 @@
+<div>
+  <div class="download-total-info"> 
+    <div class="btn-group-left"> 
+      <a class="btn-select btn-select-disable" href="javascript:void(0);">生成对账单</a>
+      <a class="btn-select" href="javascript:void(0);">导出对账单</a>
+      <a class="btn-select" href="javascript:void(0);">申请结算</a>
+    </div>
+    <div class="download-total-num">
+      <a>累计交易总额：&nbsp;&nbsp;<em class="total_amount" id="detail_count">100</em> </a>
+      <a>累计收入：&nbsp;&nbsp;<em class="total_amount" id="detail_count">780</em></a>
+    </div> 
+  <div>
+  <tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+    <template tl-template="date" let-rowData>
+      <p>{{rowData.date}}</p>
+    </template>
+    <template tl-template="quantity" let-rowData>
+      <p>{{rowData.quantity}}</p>
+    </template>
+    <template tl-template="total_amount" let-rowData>
+      <p>{{rowData.total_amount}}</p>
+    </template>
+    <template tl-template="real_price" let-rowData>
+      <p>{{rowData.real_price}}</p>
+    </template>
+    <template tl-template="poundage" let-rowData>
+      <p>{{rowData.poundage}}</p>
+    </template>
+    <template tl-template="oper" let-rowData>
+      <p>{{rowData.oper}}</p>
+    </template>
+  </tl-data-table> 
+</div>

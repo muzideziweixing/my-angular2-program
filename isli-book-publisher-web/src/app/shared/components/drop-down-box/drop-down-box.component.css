@@ -1,0 +1,10 @@
+/*.drop-down-position{ position:relative; }*/
+.icon-drop-box{ border: 1px solid #c7c7c7; position: relative; background: #fff;}
+.icon-drop-box input.icon-drop-box-input{ border: none;}
+.icon-drop-down{ width: 10px; height: 24px; display: block; position: absolute; right: 5px; background: url(/assets/images/drop-down-box/default.png) center no-repeat; }
+
+.drop-down-ul{ width: 100%; border: 1px solid #c7c7c7; border-top: 0; background: #fff; padding: 5px 0; overflow: hidden; position:absolute; z-index: 9;}
+.drop-down-ul li{ width:100%; height: 28px; line-height: 28px; padding:0 10px; box-sizing: border-box; overflow: hidden; color: #838383; cursor: pointer; font-size: 12px;}
+.drop-down-ul li:hover{ background: #e4f6f8; color: #259dab;}
+
+.drop-down-ul-auto{ overflow-y: auto;}

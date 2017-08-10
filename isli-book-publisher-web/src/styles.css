@@ -1,0 +1,116 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,input,textarea,button{font-family:"Microsoft YaHei","WenQuanYi Micro Hei",SimHei,tahoma,sans-serif; font-size: 13px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+body{font-size:13px;-webkit-text-size-adjust:none; }
+table{border-collapse:collapse;border-spacing:0;table-layout:fixed;}
+ul li,ol li{list-style-type:none;}
+a,button{outline:none; }
+a{text-decoration:none;}
+img{border:none;vertical-align:top}
+input,select,textarea,button {vertical-align:middle;}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {width:100%;border-collapse:collapse;}
+em{font-style: normal;color: #f40;}
+dl,dt,dd{ float: left;}
+
+input,textarea{ padding:0 5px; border: 1px solid #C7C7C7; font-size: 13px; color:#7e7e7e; }
+input{ height:24px;line-height: 24px; }
+label{ color:#575757; }
+span{ color:#888; }
+
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; overflow:hidden;}
+.clearfix { zoom:1;}
+
+.fl{ float: left;}
+.fr{ float: right;}
+/*滚动条*/
+::-webkit-scrollbar{ width: 8px; background-color: #f2f2f2; }
+::-webkit-scrollbar-thumb{ background-color: rgb(213, 213, 213); border-color: rgb(242, 242, 242);}
+/*按钮*/
+.btn{ padding: 0 30px; height: 32px; line-height: 30px; text-align: center; border-radius: 3px; color: #fff; border: 0; margin-left: 5px; display: inline-block; cursor: pointer;}
+.btn-red{ background: #d9624f; border-bottom: 2px solid #ad7066;}
+.btn-red:hover{ background: #f06d58; border-bottom: 2px solid #bf7a6f;}
+.btn-red:active{ background: #c54b38; border-bottom: 2px solid #9f675e;}
+.btn-blue{ background: #2fadbc; border-bottom: 2px solid #257e88;}
+.btn-blue:hover{ background: #38c6d7; border-bottom: 2px solid #5ba1aa;}
+.btn-blue:active{ background: #25a3b2; border-bottom: 2px solid #538389;}
+.btn-gray{ background: #b9b9b9; border-bottom: 2px solid #aaa; cursor: no-drop;}
+.btn-select{ width: 73px; height: 32px; border: 1px solid #5acedb; background: #f1fdfe; color: #5acedb; display: inline-block; text-align: center; line-height: 32px; cursor: pointer; margin-left: 10px; margin-top: -3px;}
+.btn-select:hover{ background: #f7feff;}
+.btn-select:active,.btn-select-active,.btn-select-active:hover,.btn-select-active:active{ background: #e0f9fb;}
+.btn-select-disable,.btn-select-disable:hover,.btn-select-disable:active{ width: 73px; height: 32px; background: #f8fdfd; border: 1px solid #96dfe8; color: #8ebbc0; display: inline-block; text-align: center; line-height: 32px; cursor: pointer; margin-left: 5px;}
+.btn-search{ padding: 0 15px; float: right; margin-right: 55px;}
+.btn-group{ width: 100%; text-align: center; margin: 0 auto;}
+.btn-group-left{ float: left; padding-left: 6px;}
+/*搜索*/
+.search{ width: 100%; height: auto; padding: 16px 0 16px 0; position:relative; z-index: 10; background: #fafafa; border-bottom: 1px solid #dbdbdc;/* border-right: 0; border-top: 0;*/ box-sizing: border-box; }
+.search dl{ width: auto; height: 26px; float: left; padding-bottom: 6px;}
+.search dl dt{ width: 125px; height: 26px;line-height: 26px; padding-right: 7px; color: #575757; float: left; text-align: right;}
+.search dl dt span{ color: #f40;}
+.search dl dd input{ width: 178px; height: 24px; line-height: 24px; padding: 0 10px; border: 1px solid #c7c7c7; float: left; background: #fff; color: #7e7e7e;}
+.search dl dd input.ui-inputtext{ width: 100px; background:#fff url(assets/images/datePickerDefault.png) no-repeat 94px 1px;}
+.search dl dd input.ui-inputtext:hover{background:#fff url(assets/images/datePicker.png) no-repeat 94px 1px;}
+/*.search dl dd .tl-drop-down{ width: 188px;}*/
+/*搜索文字高亮*/
+.highlight{ color: #2da3b1}
+/*table*/
+/*.download-total-info{ height: 45px; line-height: 45px; }
+.download-total-book{ padding-left: 6px; height: 45px; line-height: 45px; color: #5f6a6c; float: left; padding-left: 12px; font-weight: bold;}
+.download-total-num{ float: right; padding-right: 55px;}
+.download-total-num a{ height: 45px; line-height: 45px; color: #5e5e5e; padding-left: 20px;}
+.download-total-num em{ color: #2fadbc; font-weight: bold;}*/
+/*分页*/
+.tl-paginator{ height: 23px; display: flex; justify-content: flex-end; padding-top: 23px; padding-bottom: 23px;}
+.ui-paginator{ height: 23px; }
+.ui-paginator-pages{ padding:0; display: inline-block; vertical-align: top; }
+.ui-paginator-page{ width: 21px; height: 21px; line-height: 21px; color: #737373; text-align: center; margin-left: 5px; border: 1px solid #bababa; display: inline-block;}
+.ui-state-active{ background: #79c3cc; color: #fff; border: 1px solid #79c3cc;}
+.ui-paginator-prev,.ui-paginator-next{ width: 23px; height: 23px; border: 0; display: inline-block;}
+.ui-paginator-prev{ background:url(assets/images/pre.png) no-repeat ;}
+.ui-paginator-next{ background:url(assets/images/next.png) no-repeat ;}
+.ui-paginator-next:hover,.ui-paginator-next:active,.ui-paginator-prev:hover,.ui-paginator-prev:active{ background-position: 0 -23px;}
+.ui-paginator-next.ui-state-disabled,.ui-paginator-next.ui-state-disabled:active,.ui-paginator-next.ui-state-disabled:hover,
+.ui-paginator-prev.ui-state-disabled,.ui-paginator-prev.ui-state-disabled:active,.ui-paginator-prev.ui-state-disabled:hover{background-position: 0 -46px;}
+.tl-paginator-ext { height:23px; line-height:23px; padding-right: 23px; padding-left: 12px;}
+.tl-paginator-ext input{ width: 26px; height: 21px; border: 1px solid #bababa; color: #7e7e7e; text-align: center; vertical-align: top;}
+.tl-paginator-ext span{ color: #989898; height:23px; line-height: 23px; display: inline-block;}
+.tl-paginator-ext span.page-skip{ display: inline-block; position: static; width: 40px; text-align: center;border: 1px solid #5acedb; color: #5acedb; height: 21px; line-height: 21px; }
+.tl-paginator-ext span.page-skip:hover,.tl-paginator-ext span.page-skip:active{ background: #f1fdfe;}
+/*日历组件*/
+.ui-datepicker{ width:214px;padding:0;border:1px solid silver; position: absolute; z-index: 99; top: 27px;}
+.ui-inputtext{ width: 193px; height: 24px; padding: 0 10px; border: 1px solid #a5a5a5; color: #7e7e7e; background:url(assets/images/datePickerDefault.png) no-repeat 187px 1px;}
+.ui-inputtext:hover{background:url(assets/images/datePicker.png) no-repeat 187px 1px;}
+.ui-datepicker-title { margin: 0 2.3em; height: 28px; line-height: 28px; text-align: center; }
+.ui-datepicker-header{ width: 214px;  height: 28px; line-height: 28px; color: #fff; padding: 0; position: relative; background:url(assets/images/date_header_bg.png) top center repeat-x; border-bottom: 1px solid #c7d7ea;}
+.ui-datepicker-prev,.ui-datepicker-next{ position: absolute; top: 1.25em; display: inline-block;}
+.ui-datepicker-prev { margin-left:5px;background:url(assets/images/dateLeftBg.png) center no-repeat; width:20px; height:28px; font-size:0; left: .125em;}
+.ui-datepicker-next { margin-right:5px;background:url(assets/images/dateRightBg.png) center no-repeat; width:20px; height:28px; font-size:0; right: .125em;}
+.ui-datepicker-calendar { margin:0; width:214px; background: #fff;}
+.ui-datepicker-calendar thead tr { color:#589BA3;border-top:1px solid #c8d2d4;border-bottom:1px solid #c8d2d4;background:#E5F3F5;}
+.ui-datepicker-calendar thead tr th span {font-weight:400;color:#589BA3;}
+.ui-datepicker-calendar thead tr { text-align:center;font-weight:400;font-size:12px;height:19px;background:#e5f3f5;color:#589ba3;border:0;padding:0;}
+.ui-datepicker-calendar tbody tr td { border:0; border-top:1px solid #e7e6e6;border-left:1px solid #e7e6e6;height:22px;line-height:22px;text-align:center;padding:0;}
+.ui-datepicker-calendar tbody tr td:nth-of-type(1) {border-left:none;}
+.ui-datepicker-calendar tbody tr td a { padding:0; font-size:12px;  width: 28px; height: 21px; display: inline-block; color: #5e5e5e;}
+.ui-datepicker-calendar tbody tr td a:hover {background:#f1fdfe;}
+.ui-datepicker-calendar tbody tr td a.ui-state-active  { background:#fff; color: #5e5e5e; border: 1px solid #6fccd7;}
+.ui-datepicker-calendar tbody tr td a.ui-state-highlight  { background:#6fccd7; color:#fff; border: 1px solid #6fccd7;}
+.ui-datepicker-calendar tbody tr td a.ui-state-disabled{ opacity: .35;}
+.ui-datepicker-calendar tbody tr td.ui-state-disabled a{ color: #7e7e7e; opacity: .35;}
+.ui-datepicker-calendar tbody tr td.ui-state-disabled a:hover{ background: #fff;}
+.ui-datepicker-year,.ui-datepicker-month {height:28px;line-height:28px;font-size:13px;font-weight:600;}
+.ui-datepicker-year {float:left;text-align:right;width:49%;}
+.ui-datepicker-year::after {content:'';}
+.ui-datepicker-month::before {content:' - ';}
+.ui-datepicker-month {float:right;text-align:left;width:49%;}
+.ui-datepicker select{ outline: none; border: 0;}
+.ui-datepicker select.ui-datepicker-month,div.ui-datepicker select.ui-datepicker-year {height:28px;line-height:28px;position:relative;top:0;text-align:center;color:#fff;background:transparent;-webkit-appearance:none;background:url(assets/images/down.png) right center no-repeat;margin-top:0;}
+.ui-datepicker select.ui-datepicker-month {text-indent:2em;}
+.ui-datepicker select.ui-datepicker-year {text-indent:1em;}
+.ui-datepicker select.ui-datepicker-month option,div.ui-datepicker select.ui-datepicker-year option {color:#5e5e5e;}
+/*语种*/
+.ui-dropdown{ width: 203px; height: 24px; line-height: 24px; color: #7e7e7e; padding-left: 10px; background: url(assets/images/drop-down-box/default.png) 192px center no-repeat; border: 1px solid #a5a5a5;}
+.ui-dropdown .ui-inputtext{ border: 0; padding: 0;}
+.ui-helper-hidden-accessible{ display: none; }
+.ui-dropdown-items-wrapper{ max-height: 200px; }

@@ -1,0 +1,4 @@
+<label [ngClass]="{'selected':value,'disabled':disabled}">
+  <input hidden type="checkbox" [(ngModel)]="value" [disabled]="disabled">{{labelName}}
+</label>
+

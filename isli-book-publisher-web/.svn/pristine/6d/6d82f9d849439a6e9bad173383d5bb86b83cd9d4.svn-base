@@ -1,0 +1,20 @@
+<div class="search clearfix">
+  <dl>
+    <dt><label>结算支付方&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [(ngModel)]="payer" [placeholder]="'全部'"></tl-drop-down-box></dd>
+  </dl>
+  <dl>
+    <dt><label>结算状态&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [(ngModel)]="payer1" [placeholder]="'全部'"></tl-drop-down-box></dd>
+  </dl>
+  <dl>
+    <dt><label>结算单号&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><tl-drop-down-box [dropDownBoxObj]="dropDownBoxObj" [(ngModel)]="payer2" [placeholder]="'请输入结算单号'"></tl-drop-down-box></dd>
+  </dl>
+  <dl>
+    <dt><label>结算日期&nbsp;:&nbsp;&nbsp;</label></dt>
+    <dd><input type="text"></dd>
+  </dl>
+
+  <button class="btn btn-blue btn-search" href="javascript:void(0);" (click)="clickSearch()">搜索</button> 
+</div>

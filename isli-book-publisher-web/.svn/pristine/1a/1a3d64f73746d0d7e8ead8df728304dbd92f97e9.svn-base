@@ -1,0 +1,5 @@
+/*.moni-select{ position: relative;}
+.moni-select ul{ position: absolute;}
+.moni-select ul li{}
+.moni-select-input{ width: 178px; height: 24px; line-height: 24px; padding: 0 10px; border: 1px solid #c7c7c7; float: left; background: #fff; color: #7e7e7e; background: url(../../../../assets/images/default.png) right center no-repeat;} */
+ 

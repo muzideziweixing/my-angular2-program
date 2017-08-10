@@ -1,0 +1,8 @@
+.new-goods-tab{ width: 779px; height: 30px; margin: 0 auto; padding-top: 30px; padding-bottom: 40px;}
+.new-goods-tab a{ width: 255px; height: 30px; padding-left: 25px; display: inline-block; font-size: 13px; line-height: 30px;}
+.new-goods-tab-first{ color: #fff; background: url(../../../assets/images/newGoodsTab.png);}
+.new-goods-tab-end{ color: #676767; background: url(../../../assets/images/newGoodsTabEnd.png);}
+.tab-selected{color: #fff; background: url(../../../assets/images/newGoodsTabEndSel.png);}
+.multi-new{ width: 22px; height: 22px; display: inline-block; background: url(../../../assets/images/multiNew.png); background-position: 0 0; float: right; margin-top: 4px;}
+.multi-new:hover{ background-position: -22px 0;}
+.multi-new:active{background-position: -44px 0;}

@@ -1,0 +1,11 @@
+
+<div class="download-total-info">
+      <a class="download-total-book">
+        <span>您正在查看图书商品《</span>
+        <em>{{goodsInfo?.bookTitle}}</em>
+        <span>》的下载详情</span>
+      </a>
+      <div class="download-total-num">
+          <a>累计下载：&nbsp;&nbsp;<em class="total_amount" id="detail_count">{{goodsInfo?.downloadNum}}</em></a>
+      </div> 
+</div> 

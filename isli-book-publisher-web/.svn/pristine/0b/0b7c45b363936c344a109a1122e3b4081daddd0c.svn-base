@@ -1,0 +1,33 @@
+
+
+.list-info-box{ padding-bottom: 50px;}
+.list-input-pub{ width: 779px; margin: 0 auto; height: auto;}
+.list-input-pub dl,dt,dd{ line-height: 26px; float: left; position: relative;} 
+.list-input-pub dl{ width: 100%; padding-bottom: 17px;}
+.list-input-pub dl dt{ width: 156px; line-height: 26px; color: #5e5e5e; text-align: right; padding-right: 7px;}
+.list-input-pub dl dt span{ color: #e36731; padding-right: 3px;}
+.list-input-pub dl dd{ width: 616px; color: #7e7e7e; font-size: 0;}
+.list-input-pub dl dd input,textarea,select{ float: left;}
+.list-input-pub dl dd input.isbn{ width: 58px;}
+.list-input-pub dl dd input.file{ width: 73px; height: 32px; position: absolute; left: 110px; top: 0; margin: 0; padding: 0; border: 0; background: none; font-size: 0; opacity: 0; cursor: pointer;}
+.list-input-pub dl dd input,.list-input-pub dl dd select{ padding: 0 10px; border: 1px solid #a5a5a5; color: #7e7e7e;} 
+.list-input-pub dl dd input{ width: 424px; height: 24px; } 
+.list-input-pub dl dd span{ width: 12px; display: inline-block; float: left; text-align: center; color: #a5a5a5;}
+.list-input-pub dl dd textarea{ width: 424px; height: 142px; line-height: 20px; padding: 5px 10px; text-align: justify; border: 1px solid #a5a5a5; color: #7e7e7e; resize: none;} 
+.list-input-pub dl dd .warn-mark{ width: 100%; height: 17px; line-height: 17px; color: #e06a2f; position: absolute; top: 26px; left: 0;}
+.list-input-pub dl dd .warn-mark-pic{ top: 130px;}
+.list-input-pub dl.high{ height: 154px;}
+.list-input-pub dl.high dd .warn-mark{ top: 154px;}
+.list-input-pub dl.dl-left{ width: 400px;}
+.list-input-pub dl.dl-right{ width: 379px;}
+.list-input-pub dl.short dd{ width: 216px; height: 26px;}
+.list-input-pub dl.short dd input{ width: 193px;}
+.list-input-pub dl.short dd select{ width: 213px; height: 26px;} 
+.text-number{ color: #4a4a4a; font-weight: normal; bottom: 3px; padding-left: 10px; position: absolute;}
+.text-word{font-style: normal;}
+.pic-default{ width: 98px;height: 128px; border: 1px solid #a5a5a5; margin-right: 9px; float: left; }
+.pic-tips{ position: absolute; left: 108px; bottom: 0; color: #9e9e9e; font-size: 12px;}
+.pic-tips em{ color: #d9624f;}
+.pic-select-box .btn-select{ margin: 0;}
+.padding-top-bot{ padding-top: 65px; padding-bottom: 50px;}
+ 

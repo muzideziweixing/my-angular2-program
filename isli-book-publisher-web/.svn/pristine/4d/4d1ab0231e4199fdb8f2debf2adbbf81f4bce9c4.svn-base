@@ -1,0 +1,5 @@
+<div>
+  <a *ngIf="step==0" class="btn btn-red" href="javascript:void(0);" (click)="add()">添加</a>
+  <a *ngIf="step==1" class="btn btn-red" href="javascript:void(0);" (click)="save()">保存</a>
+  <a *ngIf="step==1" class="btn btn-blue" href="javascript:void(0);" (click)="cancel()">取消</a>
+</div>

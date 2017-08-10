@@ -1,0 +1,21 @@
+<div class="product-list-box">
+  <div class="product-list clearfix">
+    <ul>
+      <li *ngFor="let rowData of productListValue;let i = index">
+        <div *ngFor="let obj of productListDataObj.productColumnObjs" [ngStyle]="obj.ngStyle" [ngClass]="obj.ngClass">
+          <span *ngIf="!obj.template">{{rowData[obj.field]}}</span>
+          <tl-templateLoader [templates]="templates.toArray()" [data]="rowData" [templateName]="obj.template" [index]="i"></tl-templateLoader>
+          <ng-content></ng-content>
+        </div>
+      </li> 
+      <li *ngIf="!productListValue||!productListValue.length" class="other-status">
+          <span [hidden]="!!productListValue" class="data-loading">数据加载中···</span>
+          <span [hidden]="!productListValue" class="no-data">无符合搜索条件的结果</span>
+      </li> 
+    </ul> 
+  </div>
+  <!--<tl-paginator [paginateObj]="paginateObj" (onPageChange)="pageChange($event)"></tl-paginator>-->
+  <div class="paging-box-position">
+    <tl-paging-box [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)"></tl-paging-box>
+  </div>
+</div>

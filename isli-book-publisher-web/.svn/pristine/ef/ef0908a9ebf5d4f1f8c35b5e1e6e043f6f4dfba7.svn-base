@@ -1,0 +1,1 @@
+<a [class]="className" [ngClass]="{'disabled':disabled}" href="javascript:void(0);" (click)="opraClick()"></a>

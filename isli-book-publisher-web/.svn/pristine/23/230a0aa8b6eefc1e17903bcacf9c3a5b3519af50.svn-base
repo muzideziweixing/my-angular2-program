@@ -1,0 +1,12 @@
+.download-total-num{ height: 45px; line-height: 45px; padding-right: 55px; float: right;}
+.download-total-num a{ height: 45px; line-height: 45px; color: #5e5e5e; padding-left: 20px; display: block; float: left;}
+.download-total-num em{ color: #2fadbc; font-weight: bold;}
+.download-total-num span{ width: 22px; height: 42px; display: block; padding: 0; cursor: pointer; float: left; z-index: 9;}
+.data-table-list{ background: url(/assets/images/listTrade.png) 100% no-repeat; background-position: 0 0; margin-left: 35px;}
+.data-table-image-text{ background: url(/assets/images/matrixTrade.png) 100% no-repeat; background-position: 0 0; margin-left: 10px; }
+.data-table-question{ background: url(/assets/images/helpTrade.png) center center no-repeat; margin-left: 10px; position: relative;}  
+.data-table-question em{ width: 181px; height: 49px; display: none; position: absolute; right: -20px; top: 34px; font-size: 12px; 
+color: #7e7e7e; line-height: 14px; text-align: left; font-weight: 400; padding: 15px 15px 0 10px; background: url(/assets/images/matrixBg.png) no-repeat;}
+.data-table-question:hover em{ display: block;}
+.data-table-active{ background-position: 0 -42px;}
+     

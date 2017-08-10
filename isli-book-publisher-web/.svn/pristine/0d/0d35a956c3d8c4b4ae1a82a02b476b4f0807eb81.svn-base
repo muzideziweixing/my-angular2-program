@@ -1,0 +1,10 @@
+
+<div class="search clearfix">
+    <dl>
+        <dt>商品搜索：</dt>
+        <dd>
+            <input id="search" type="text" maxlength="30" placeholder="ISBN、关键词" [(ngModel)]="product_keywords"/>
+        </dd>
+    </dl>
+    <button class="btn btn-blue btn-search" (click)="searchClick()">搜索</button>
+</div>  

@@ -1,0 +1,4 @@
+<tl-nav>
+  <router-outlet></router-outlet>
+</tl-nav>
+

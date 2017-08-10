@@ -1,0 +1,24 @@
+<tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+  <template tl-template="serial_number" let-rowData>
+    <p>{{rowData._index+1}}</p>
+  </template>
+  <template tl-template="goods_name" let-rowData>
+    <p>商品更新的最新时间&nbsp;:&nbsp;{{rowData.update_time}}</p>
+    <p>《{{rowData.goods_name}}》</p>
+  </template>
+  <template tl-template="goods_price" let-rowData>
+    <p>¥&nbsp;{{rowData.goods_price}}</p>
+  </template>
+  <template tl-template="strategy" let-rowData>
+    <p>{{rowData.strategy}}</p>
+  </template>
+  <template tl-template="path" let-rowData>
+    <p><tl-check-box [ngModel]="true" [labelName]="'门户店主页'" [disabled]="true"></tl-check-box></p>
+    <p><tl-check-box [ngModel]="false" [labelName]="'关注我的'" [disabled]="true"></tl-check-box></p>
+    <p><tl-check-box [ngModel]="false" [labelName]="'门户店推荐'"></tl-check-box></p>
+  </template>
+  <template tl-template="oper" let-rowData>
+    <tl-operating-button [className]="'opraEdit'" (onClick)="edit($event)"></tl-operating-button>
+    <tl-operating-button [className]="'opraOut'" (onClick)="soldOut($event)" [disabled]="true"></tl-operating-button>
+  </template>
+</tl-data-table>
