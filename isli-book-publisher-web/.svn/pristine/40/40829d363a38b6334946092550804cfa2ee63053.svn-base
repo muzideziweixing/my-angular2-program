@@ -1,0 +1,5 @@
+export { DetailsComponent } from './details/details.component'
+export { DetailsTableComponent } from './details-table/details-table.component'
+export { DetailsTipsComponent } from './details-tips/details-tips.component'
+export { DownloadComponent } from './download/download.component'
+export { FinanceSharedModule } from './finance-shared.module'

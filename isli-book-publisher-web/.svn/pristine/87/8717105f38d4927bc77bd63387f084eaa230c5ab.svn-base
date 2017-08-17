@@ -1,0 +1,19 @@
+<div class="account-detail">
+    <h5>
+        结算凭证： 
+    </h5>
+    <ul class="clearfix">
+        <li>
+            <a>结算方式：</a>
+            <span>{{settlementPrrofInfo?.set_func}}</span>
+        </li>
+        <li>
+            <a>交易流水号：</a>
+            <span>{{settlementPrrofInfo?.set_number}}</span>
+        </li>
+        <li>
+            <a>交易凭证：</a>
+            <a class="proof-box"><img src="{{settlementPrrofInfo?.set_proof}}"></a>
+        </li> 
+    </ul> 
+</div> 

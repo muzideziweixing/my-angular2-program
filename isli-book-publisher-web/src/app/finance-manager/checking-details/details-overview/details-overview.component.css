@@ -1,0 +1,10 @@
+.account-detail h5{ height: 40px; line-height: 40px; font-weight: normal; font-size: 14px; padding-left: 18px; position: relative;}
+.account-detail h5{ color: #444;} 
+.account-detail a{ font-size: 13px; color: #333; line-height: 26px;}
+.account-detail span{ font-size: 13px; color: #888; line-height: 26px;}
+.account-detail p { padding-left: 70px;}
+.account-detail p a{width: 105px; display: inline-block;}
+.account-detail p span{width: 140px; display: inline-block;}
+.account-detail p em{ color: #9f9f9f; font-size: 12px;} 
+.account-detail ul,.account-detail p{ padding-left: 70px;}
+.account-detail ul li{ width: 280px; float: left; }

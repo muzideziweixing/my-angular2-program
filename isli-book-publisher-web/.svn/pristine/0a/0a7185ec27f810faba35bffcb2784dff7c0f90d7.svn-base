@@ -1,0 +1,24 @@
+<div class="account-detail">
+    <h5>{{detailsName}}明细：</h5>
+    <p>
+        <a>本次收益总额：</a>
+        <span>￥{{statementDetailsInfo?.this_earnins_total}}</span>
+        <em>本次收益总额 =（累计交易总额-交易手续费总额）* 收益比例</em>
+    </p>
+    <p>
+        <a>平台收益总额：</a>
+        <span>￥{{statementDetailsInfo?.earnings_total}}</span>
+        <em>平台收益总额 =（累计交易总额-交易手续费总额）*（100%-收益比例）</em>
+    </p>
+    <p>
+        <a>累计交易总额：</a>
+        <span>￥{{statementDetailsInfo?.trade_total}}</span>
+        <em>累计交易总额 = ∑交易价格</em>
+    </p>
+    <p>
+        <a>交易手续费总额：</a>
+        <span>￥{{statementDetailsInfo?.trade_fee_total}}</span>
+        <em>交易手续费总额 = ∑交易手续费</em>
+    </p>
+</div>
+ 

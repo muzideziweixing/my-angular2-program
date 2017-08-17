@@ -1,0 +1,27 @@
+<div class="account-detail">
+    <h5>
+        结算单概览： 
+    </h5>
+    <ul class="clearfix">
+        <li>
+            <a>结算日期：</a>
+            <span>{{detailsInfo?.start_date}}&nbsp;至&nbsp;{{detailsInfo?.end_date}}</span>
+        </li>
+        <li>
+            <a>结算状态：</a>
+            <span>{{detailsInfo?.status}}</span>
+        </li>
+        <li>
+            <a>结算支付方：</a>
+            <span>{{detailsInfo?.part}}</span>
+        </li>
+        <li>
+            <a>结算单号：</a>
+            <span>{{detailsInfo?.numbers}}</span>
+        </li>
+        <li>
+            <a>结算金额：</a>
+            <span>￥{{detailsInfo?.sum}}</span>
+        </li>
+    </ul> 
+</div>

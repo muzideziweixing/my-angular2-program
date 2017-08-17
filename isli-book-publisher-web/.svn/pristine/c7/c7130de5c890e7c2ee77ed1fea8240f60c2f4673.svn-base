@@ -1,0 +1,11 @@
+<div class="download-total-info">
+  <div class="btn-group-left">
+    <a class="btn-select btn-select-disable" href="javascript:void(0);">生成对账单</a>
+    <a class="btn-select" href="javascript:void(0);">导出对账单</a>
+    <a class="btn-select" href="javascript:void(0);">申请结算</a>
+  </div>
+  <div class="download-total-num">
+    <a>累计交易总额：&nbsp;&nbsp;<em class="total_amount" id="detail_count">{{checkTotalBarValue?.trade_total}}</em> </a>
+    <a>累计收入：&nbsp;&nbsp;<em class="total_amount" id="detail_count">{{checkTotalBarValue?.trade_income}}</em></a>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<ng-container>
+  <tl-details-tips></tl-details-tips>
+  <tl-details-overview [detailsInfo]="detailsInfo"></tl-details-overview>
+  <tl-details-proof *ngIf="detailsStatus=='success'" [settlementPrrofInfo]="settlementPrrofInfo"></tl-details-proof>
+  <tl-details [statementDetailsInfo]="statementDetailsInfo" [detailsName]="detailsName"></tl-details>
+  <tl-download></tl-download>
+  <tl-details-table [pagingBoxObj]="pagingBoxObj" [dataTableValue]="dataTableValue" (onPageChange)="pageChange($event)"></tl-details-table>
+</ng-container>

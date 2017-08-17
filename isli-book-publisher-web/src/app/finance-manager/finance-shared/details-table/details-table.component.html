@@ -1,0 +1,30 @@
+<tl-data-table [dataTableObj]="dataTableObj" [dataTableValue]="dataTableValue" [pagingBoxObj]="pagingBoxObj" (onPageChange)="pageChange($event)">
+  <template tl-template="number" let-rowData>
+    <p>{{rowData?._index+1}} </p>
+  </template>
+  <template tl-template="order_num" let-rowData> 
+    <p>{{rowData?.order_num}} </p>
+    <span>{{rowData.order_date}}</span> 
+  </template>
+  <template tl-template="goods_name" let-rowData> 
+    <p>{{rowData?.goods_name}} </p>
+  </template>
+  <template tl-template="goods_price" let-rowData> 
+    <p>￥{{rowData?.goods_price}} </p>
+  </template>
+  <template tl-template="trade_price" let-rowData> 
+    <p>￥{{rowData?.trade_price}} </p>
+  </template> 
+  <template tl-template="earnings" let-rowData> 
+    <p>￥{{rowData?.earnings}} </p>
+  </template> 
+  <template tl-template="earnings_ratio" let-rowData> 
+    <p>{{rowData?.earnings_ratio}} %</p>
+  </template>  
+  <template tl-template="platform_earnings" let-rowData> 
+    <p>￥{{rowData?.platform_earnings}} </p>
+  </template> 
+  <template tl-template="trade_fee" let-rowData> 
+    <p>￥{{rowData?.trade_fee}} </p>
+  </template> 
+</tl-data-table> 

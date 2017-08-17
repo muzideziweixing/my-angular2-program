@@ -1,0 +1,19 @@
+<div class="account-detail">
+    <h5>
+        对账单概览： 
+    </h5>
+    <ul class="clearfix">
+        <li>
+            <a>账单日期：</a>
+            <span>{{checkStatementValueInfo?.check_date}}</span>
+        </li>
+        <li>
+            <a>账单交易量：</a>
+            <span>{{checkStatementValueInfo?.check_number}}</span>
+        </li>
+        <li>
+            <a>账单统计方：</a>
+            <span>{{checkStatementValueInfo?.check_party}}</span>
+        </li>
+    </ul> 
+</div>

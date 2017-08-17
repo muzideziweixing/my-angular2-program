@@ -1,0 +1,6 @@
+.download-total-info{ height: 45px; line-height: 45px; border-top: 1px dashed #c4c4c4; }
+.download-total-book{ padding-left: 6px; height: 45px; line-height: 45px; color: #5f6a6c; float: left; padding-left: 12px; font-weight: bold;}
+.download-total-num{ float: right; padding-right: 55px;}
+.download-total-num a{ height: 45px; line-height: 45px; color: #5e5e5e; padding-left: 20px;}
+.download-total-num em{ color: #2fadbc; font-weight: bold;}
+.btn-select{ float: left; margin-top: 6px;}
